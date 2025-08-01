@@ -1,24 +1,32 @@
-# Folder structure
+# 目录结构
 
-- `src` - source code for your kaplay project
-- `dist` - distribution folder, contains your index.html, built js bundle and static assets
+- `src` - 主要代码
+    - `main.js` - 入口文件，类似路由功能
+    - `games` - 游戏代码
+      - `game_name` - 游戏名称
+        - `index.js` - 游戏入口
+- `dist` - 打包后的代码
+- `public` - 静态资源
+- `index.html` - 主页
+- `game.html` - 游戏页
+- `README.md` - 说明文档
 
 
-## Development
+## 开发
 
 ```sh
 $ npm run dev
 ```
 
-will start a dev server at http://localhost:8000
+运行于 http://localhost:3001
 
-## Distribution
+## 打包
 
 ```sh
 $ npm run build
 ```
 
-will build your js files into `dist/`
+将js文件打包放入 `dist/`
 
 ```sh
 $ npm run zip
